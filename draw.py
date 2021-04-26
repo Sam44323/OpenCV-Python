@@ -26,8 +26,13 @@ blank = np.zeros((500, 500, 3), dtype="uint8")
 # cv.imshow("Circle", blank)
 
 # 6. Drawing a line
-cv.line(blank, (0, 0), (blank.shape[1]//2,
-        blank.shape[0]//2), (0, 134, 145), thickness=3)
-cv.imshow("Line", blank)
+# cv.line(blank, (0, 0), (blank.shape[1]//2,
+#         blank.shape[0]//2), (0, 134, 145), thickness=3)
+# cv.imshow("Line", blank)
+
+# 7. Writing a text on an image
+cv.putText(blank, "Hello!", (225, 225),
+           cv.FONT_HERSHEY_TRIPLEX, 1.0, (0, 255, 0), 3)
+cv.imshow("Text", blank)
 
 cv.waitKey(0)
