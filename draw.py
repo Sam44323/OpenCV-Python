@@ -21,8 +21,13 @@ blank = np.zeros((500, 500, 3), dtype="uint8")
 # cv.imshow('Rectangle', blank)
 
 # 5. Drawing a circle
-cv.circle(blank, (250, 250), 100, (0, 134, 145), thickness=-1)
-# -1 also means FILLED
-cv.imshow("Circle", blank)
+# cv.circle(blank, (250, 250), 100, (0, 134, 145), thickness=-1)
+# # -1 also means FILLED
+# cv.imshow("Circle", blank)
+
+# 6. Drawing a line
+cv.line(blank, (0, 0), (blank.shape[1]//2,
+        blank.shape[0]//2), (0, 134, 145), thickness=3)
+cv.imshow("Line", blank)
 
 cv.waitKey(0)
