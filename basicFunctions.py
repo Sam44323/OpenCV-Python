@@ -14,4 +14,9 @@ cv.imshow('Grayed Image', gray)
 blur = cv.GaussianBlur(img, (7, 7), cv.BORDER_DEFAULT)
 cv.imshow('Blurred', blur)
 
+# Edge cascade (finding the edges present in an image)
+
+canny = cv.Canny(img, 125, 175)
+cv.imshow("Canny Edges Cascading", canny)
+
 cv.waitKey(0)
