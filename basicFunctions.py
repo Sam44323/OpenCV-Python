@@ -25,4 +25,9 @@ cv.imshow("Canny Edges Cascading", canny)
 dilated = cv.dilate(canny, (7, 7), iterations=3)
 cv.imshow('Dilated ', dilated)
 
+# Eroding an image
+
+eroded = cv.erode(dilated, (7, 7), iterations=3)
+cv.imshow('Eroded', eroded)
+
 cv.waitKey(0)
