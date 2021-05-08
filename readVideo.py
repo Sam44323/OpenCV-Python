@@ -13,4 +13,4 @@ while True:
         break
 
 capture.release()  # release the capture device
-cv.destroyAllWindows()  # destoy the windows
+cv.destroyAllWindows()  # destroy the windows
