@@ -16,7 +16,7 @@ cv.imshow('Blurred', blur)
 
 # Edge cascade (finding the edges present in an image)
 
-canny = cv.Canny(img, 125, 175)
+canny = cv.Canny(blur, 125, 175)
 cv.imshow("Canny Edges Cascading", canny)
 
 cv.waitKey(0)
