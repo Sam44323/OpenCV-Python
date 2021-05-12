@@ -28,6 +28,7 @@ cv.imshow('Translated', translated)
 def rotate(img, angle, rotPoint=None):
     (height, width) = img.shape[:2]
 
+  # checking the rot point value
     if rotPoint is None:
         rotPoint = (width//2, height//2)
 
