@@ -40,4 +40,16 @@ def rotate(img, angle, rotPoint=None):
 rotated = rotate(img, 45)
 cv.imshow('Rotated', rotated)
 
+# Flipping
+# 0 ---> vertical flipping
+# 1 ---> horizontal flipping
+# -1 ---> hor and ver flipping
+
+flippedImageVer = cv.flip(img, 0)
+flippedImageHor = cv.flip(img, 1)
+flippedImageHorVer = cv.flip(img, -1)
+cv.imshow('Ver-Flip', flippedImageVer)
+cv.imshow('Hor-Flip', flippedImageHor)
+cv.imshow('Hor_Ver-Flip', flippedImageHorVer)
+
 cv.waitKey(0)
